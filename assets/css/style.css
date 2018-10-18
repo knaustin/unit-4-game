@@ -1,0 +1,16 @@
+body {
+    background-image: url(../images/gameBackground.jpg);
+    background-color: black;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: 'Chakra Petch', sans-serif;
+    color: ghostwhite;
+}
+
+img {
+    height: 100px;
+    width: 150px;
+    padding: 5px;
+    border: grey 3px solid;
+    background-color: lightgrey;
+}
