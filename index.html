@@ -43,7 +43,10 @@
         <br>
         <div class="row">
             <div class="mx-auto">
-                <audio src="assets/sounds/TOStheme.mp3" controls loop autoplay id="TOS"> </audio>
+                <!-- Loops TOS Theme music in the background of the splash page -->
+                <iframe src="assets/sounds/TOStheme.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+                </iframe> 
+                <audio src="assets/sounds/TOStheme.mp3" loop autoplay type="audio/mp3"> </audio>
             </div>
         </div>
     </div>

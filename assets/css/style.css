@@ -4,13 +4,28 @@ body {
     background-repeat: no-repeat; 
     background-size: cover;
     font-family: 'Chakra Petch', sans-serif;
-    color: ghostwhite;
 }
 
-img {
+h1, h3 {
+    color: ghostwhite;
+}
+/* img {
     height: 100px;
     width: 150px;
+} */
+
+.HP {
+    color: darkred;
+    text-align: center;
+}
+
+h5 {
+    color: black;
+    text-align: center;
+}
+
+.card {
     padding: 5px;
     border: grey 3px solid;
-    background-color: lightgrey;
+    background-color: ghostwhite;
 }
