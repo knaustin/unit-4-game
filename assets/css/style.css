@@ -9,10 +9,6 @@ body {
 h1, h3 {
     color: ghostwhite;
 }
-/* img {
-    height: 100px;
-    width: 150px;
-} */
 
 .HP {
     color: darkred;
@@ -29,3 +25,9 @@ h5 {
     border: grey 3px solid;
     background-color: ghostwhite;
 }
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
