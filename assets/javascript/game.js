@@ -110,7 +110,9 @@ $(document).ready(function () {
                 $(element).toggleClass("charCard defender")
                 $('#defenders').append(element);
                 $('#defText').text("Pick Your Enemy!");
-            } else currentCharacterObject = characters[index];
+            } else {
+                currentCharacterObject = characters[index]
+            };
             //Turning off the charSelect on click
             $(element).unbind("click");
             //On Click Function for Enemy Selection
