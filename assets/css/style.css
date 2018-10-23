@@ -6,28 +6,47 @@ body {
     font-family: 'Chakra Petch', sans-serif;
 }
 
+.charCard {
+    display: inline-block;
+    border: grey 2px solid;
+    margin: 3px;
+    background-color: rgba(192,192,192,0.5);
+}
+
+.defender {
+    display: inline-block;
+    border: goldenrod 2px solid;
+    margin: 3px;
+    background-color: rgba(192,192,192,0.5);
+}
+
+.enemy {
+    display: inline-block;
+    border: darkred 2px solid;
+    margin: 3px;
+    background-color: rgba(192,192,192,0.5);
+}
+
+img {
+    height: 75px;
+    width: 150px;
+}
+
 h1, h3 {
     color: ghostwhite;
 }
 
-.HP {
-    color: darkred;
+h3 {
     text-align: center;
 }
 
 h5 {
-    color: black;
+    color: #F96262;
     text-align: center;
-}
-
-.card {
-    padding: 5px;
-    border: grey 3px solid;
-    background-color: ghostwhite;
 }
 
 button {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 

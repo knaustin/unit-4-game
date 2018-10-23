@@ -1,0 +1,26 @@
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+}
+
+#lose {
+    background-image: url(../images/finalScreenLose.jpg);
+    background-color: black;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#win {
+    background-image: url(../images/finalScreenWin.jpg);
+    background-color: black;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container {
+    margin-top: 60px;
+}
+
+iframe {
+    border: grey solid 3px;
+}

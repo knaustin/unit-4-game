@@ -19,115 +19,38 @@
   </head>
   <body>
     
-  <div class="container">
-    <div class="row">
-        <h1>Star Trek RPG</h1>
-    </div>
-    <!-- Selectable Player Character -->
-    <div class="row">
-        <h3 id="capText">Pick Your Captian!</h3>
-    </div>
-    <div class="row yourChar">
-        <div class="col-md-3">
-            <div class="card character" id="kirk">
-                <img class="card-img-top" src="assets/images/Kirk.jpg" alt="Captain Kirk">
-                <div class="card-body">
-                    <h5>Capt. Kirk</h5>
-                    <p class="HP">(150)</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card character" id="sisko">
-                <img class="card-img-top" src="assets/images/Sisko.jpg" alt="Captain Sisko">
-                    <div class="card-body">
-                        <h5>Capt. Sisko</h5>
-                        <p class="HP">(150)</p>
-                    </div>
-                </div>
-            </div>
-        <div class="col-md-3">
-            <div class="card character" id="picard">
-                <img class="card-img-top" src="assets/images/Picard.jpg" alt="Captain Picard">
-                    <div class="card-body">
-                        <h5>Capt. Picard</h5>
-                        <p class="HP">(150)</p>
-                    </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card character" id="janeway">
-                <img class="card-img-top" src="assets/images/Janeway.jpg" alt="Captain Janeway">
-                <div class="card-body">
-                    <h5>Capt. Janeway</h5>
-                    <p class="HP">(150)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Selectable Enemies -->
-    <div class="row">
-            <h3 id="enemyText">Pick Your Enemy!</h3>
-        </div>
+    <!--Empty Containers for in game rendering-->
+    <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <div class="card enemy" id="borg">
-                    <img class="card-img-top" src="assets/images/BorgQueen.jpg" alt="Borg Queen">
-                    <div class="card-body">
-                        <h5>Borg</h5>
-                        <p class="HP">(150)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card enemy" id="gul">
-                    <img class="card-img-top" src="assets/images/GulDukat.jpg" alt="Gul Dukat">
-                        <div class="card-body">
-                            <h5>Gul Dukat</h5>
-                            <p class="HP">(150)</p>
-                        </div>
-                    </div>
-                </div>
-            <div class="col-md-3">
-                <div class="card enemy" id="khan">
-                    <img class="card-img-top" src="assets/images/khan.jpg" alt="Khan">
-                        <div class="card-body">
-                            <h5>Khan</h5>
-                            <p class="HP">(150)</p>
-                        </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card enemy" id="Q">
-                    <img class="card-img-top" src="assets/images/Q.jpg" alt="Q">
-                    <div class="card-body">
-                        <h5>Q</h5>
-                        <p class="HP">(150)</p>
-                    </div>
-                </div>
-            </div>
+            <h1>Star Trek RPG</h1>
         </div>
-        <!-- Game Buttons -->
-        <div class="row" id="buttContainer">
-            <div class="col-md-2">
-                    <button type="button" id="attack" class="btn btn-primary btn-lg">ATTACK!</button>
-            </div>
-            <div class="col-md-2">
-                    <button type="button" id="reset" class="btn btn-primary btn-lg">Reset</button>
-            </div>
-        </div>
-        <!-- Container for current Defenders -->
+    </div>
+    <div class="container">
         <div class="row">
-            <h3 id="defenderText"></h3>
+            <h1 id="enemyText"></h1>
         </div>
-        <div class="row" id="defenderArena">
+        <div class="row" id="enemyRow"></div>
+    </div>
+    <div class="container" id="character">
+        <div class="row">
+            <h1 id="charInst">Pick Your Character!</h1>
+        </div>
+        <div class="row" id="charRow"> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="button"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1 id="defText"></h1>
+        </div>
+        <div class="row" id="defenders">
 
         </div>
     </div>
-      
-  </div>
+
     
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
