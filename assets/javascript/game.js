@@ -38,6 +38,7 @@ var characters = [
 var defenders = [];
 var currentCharacterObject = characters[0];
 var currentEnemyObject = characters[0];
+var killCount = 0;
 
 
 // Rendering Playable Characters 
@@ -67,15 +68,19 @@ function charRender() {
 // attack function
 var attackFunction = function () {
     currentEnemyObject.health -= currentCharacterObject.attack;
-    currentCharacterObject.attack *= currentCharacterObject.attack;
+    currentCharacterObject.attack = (currentCharacterObject.attack * 2) ;
     currentCharacterObject.health -= currentEnemyObject.counterAttack;
     $(".hp-" + currentCharacterObject.name).text(currentCharacterObject.health);
     $(".hp-" + currentEnemyObject.name).text(currentEnemyObject.health);
     if (currentEnemyObject.health < 0) {
         $(".enemy").remove();
         $(".defender").attr("style", "");
+	killCount++;
     }
-    if (currentCharacterObject.health < 0) {
+	
+	if (killCount >= characters.length - 1) {
+	location.replace("youWin.html");	
+	} else if (currentCharacterObject.health < 0) {
         location.replace("youLose.html");
     }
 }
@@ -119,7 +124,7 @@ $(document).ready(function () {
             $(".defender").on("click", function enemySelect() {
                 $('#enemyText').text("Get Ready for Battle!");
                 curEnemy = this;
-                //Broken Maths, please helps. Will not give you cookies!
+                //On Click function to select current enemy
                 $(".defender").each(function (index, element) {
                     if (element === curEnemy) {
                         $(element).toggleClass("defender enemy");
